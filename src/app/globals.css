@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tw-color-primary-100: 131 201 173; /* #83C9AD */
+  --tw-color-primary-200: 110 192 160; /* #6EB0A0 */
+  --tw-color-primary-300: 89 183 146; /* #59B792 */
+  --tw-color-primary-400: 69 174 133; /* #45AE85 */
+  --tw-color-primary-500: 48 165 119; /* #30A277 */
+  --tw-color-primary-600: 43 149 107; /* #2B956B */
+  --tw-color-primary-700: 38 132 95; /* #26845F */
+  --tw-color-primary-800: 34 115 83; /* #237353 */
+  --tw-color-primary-900: 24 83 60; /* #18533C */
+
+  --tw-color-secondary-100: 125 164 185; /* #7da4b9 */
+  --tw-color-secondary-200: 103 149 174; /* #6795ae */
+  --tw-color-secondary-300: 81 134 162; /* #5186a2 */
+  --tw-color-secondary-400: 60 119 151; /* #3c7797 */
+  --tw-color-secondary-500: 38 104 139; /* #26688b */
+  --tw-color-secondary-600: 34 94 125; /* #225e7d */
+  --tw-color-secondary-700: 30 83 111; /* #1e536f */
+  --tw-color-secondary-800: 27 73 97; /* #1b4961 */
+  --tw-color-secondary-900: 19 52 70; /* #133446 */
+
+  --tw-color-tertiary-100: 236 121 137; /* #EC7989 */
+  --tw-color-tertiary-200: 233 99 118; /* #E96376 */
+  --tw-color-tertiary-300: 230 77 98; /* #E64D62 */
+  --tw-color-tertiary-400: 227 54 79; /* #E3364F */
+  --tw-color-tertiary-500: 224 32 59; /* #E0203B */
+  --tw-color-tertiary-600: 202 29 53; /* #CA1D35 */
+  --tw-color-tertiary-700: 179 26 47; /* #B31A2F */
+  --tw-color-tertiary-800: 157 22 41; /* #9D1629 */
+  --tw-color-tertiary-900: 134 19 35; /* #861327 */
+
+  --tw-color-quaternary-100: 173 221 121; /* #ADDD79 */
+  --tw-color-quaternary-200: 160 216 99; /* #A0D863 */
+  --tw-color-quaternary-300: 146 210 77; /* #92D24D */
+  --tw-color-quaternary-400: 133 205 54; /* #85CD36 */
+  --tw-color-quaternary-500: 119 199 32; /* #77C720 */
+  --tw-color-quaternary-600: 107 179 29; /* #6FB31D */
+  --tw-color-quaternary-700: 95 159 26; /* #5F9F1A */
+  --tw-color-quaternary-800: 83 139 22; /* #538B16 */
+  --tw-color-quaternary-900: 71 119 19; /* #477713 */
+
+  --tw-color-neutral-0: 255 255 255; /* #FFFFFF */
+  --tw-color-neutral-50: 231 231 231; /* #E7E7E7 */
+  --tw-color-neutral-100: 207 207 207; /* #CFCFCF */
+  --tw-color-neutral-200: 184 184 184; /* #B8B8B8 */
+  --tw-color-neutral-300: 160 160 160; /* #A0A0A0 */
+  --tw-color-neutral-400: 136 136 136; /* #888888 */
+  --tw-color-neutral-500: 112 112 112; /* #707070 */
+  --tw-color-neutral-600: 88 88 88; /* #585858 */
+  --tw-color-neutral-700: 65 65 65; /* #414141 */
+  --tw-color-neutral-800: 41 41 41; /* #292929 */
+  --tw-color-neutral-900: 17 17 17; /* #111111 */
+
+  --shadow-xs-box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  --shadow-sm-box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06),
+    0px 1px 3px 0px rgba(16, 24, 40, 0.1);
+  --shadow-md-box-shadow: 0px 2px 4px -2px rgba(16, 24, 40, 0.06),
+    0px 4px 8px -2px rgba(16, 24, 40, 0.1);
+  --shadow-lg-box-shadow: 0px 4px 6px -2px rgba(16, 24, 40, 0.03),
+    0px 12px 16px -4px rgba(16, 24, 40, 0.08);
+  --shadow-xl-box-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.03),
+    0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+  --shadow-2-xl-box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+  --shadow-3-xl-box-shadow: 0px 32px 64px -12px rgba(16, 24, 40, 0.14);
+}
+
+body {
+  background: var(--tw-color-neutral-200);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
