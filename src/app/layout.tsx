@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Jost, Roboto } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/footer/footer";
-import Navbar from "@/components/navbar/navbar";
+import Navbar from "@/components/common/navbar/navbar";
+import Footer from "@/components/common/footer/footer";
+import Providers from "@/components/providers/_providers";
 
 const jost = Jost({
   subsets: ["latin"],
@@ -35,11 +36,13 @@ export default function RootLayout({
       <body
         className={`${jost.variable} ${roboto.variable} flex min-h-screen flex-col`}
       >
-        <div className="flex-grow">
-          <Navbar />
-          {children}
-        </div>
-        <Footer />
+        <Providers>
+          <div className="flex-grow">
+            <Navbar />
+            {children}
+          </div>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

@@ -1,3 +1,9 @@
+import SampleBlock from "@/components/pages/sample/_sampleBlock";
+
 export default function Home() {
-  return <main className="">hi there</main>;
+  return (
+    <main className="">
+      <SampleBlock />
+    </main>
+  );
 }
