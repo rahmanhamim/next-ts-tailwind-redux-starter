@@ -5,7 +5,7 @@
     "no-unused-vars": "warn",
     "no-console": "warn",
     "no-undef": "warn",
-    "quotes": ["error", "single"],
+    "quotes": ["error", "double"],
     "react/display-name": "off"
   }
 }
