@@ -1,9 +1,9 @@
-import SampleBlock from "@/components/pages/sample/_sampleBlock";
+import SampleBlock from "@/components/pages/sample/_sampleBlock"
 
 export default function Home() {
   return (
-    <main className="">
+    <main className=''>
       <SampleBlock />
     </main>
-  );
+  )
 }

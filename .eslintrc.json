@@ -6,6 +6,8 @@
     "no-console": "warn",
     "no-undef": "warn",
     "quotes": ["error", "double"],
+    // "quotes": ["error", "double", { "allowTemplateLiterals": true }]
+    // "jsx-quotes": ["error", "prefer-single"],
     "react/display-name": "off"
   }
 }
