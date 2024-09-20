@@ -4,6 +4,7 @@ import Accordion, {
 import SampleButtons from "./sampleButtons"
 import FormFieldsSample from "./formFieldsSample"
 import Spinner from "@/components/ui/spinner"
+import ExampleModal from "@/components/ui/modal/exampleModal"
 
 const SampleBlock = () => {
   return (
@@ -133,6 +134,12 @@ const SampleBlock = () => {
           <Spinner size={30} className='text-primary-500' />
           <Spinner size={40} className='text-secondary-500' />
         </div>
+      </div>
+      <div className='my-4 rounded-md border p-4 shadow'>
+        <p className='flex w-32 items-center justify-center rounded-lg p-2 shadow-sm'>
+          MODAL:
+        </p>
+        <ExampleModal />
       </div>
 
       <SampleButtons />
