@@ -1,4 +1,9 @@
+import Accordion, {
+  sampleAccordionItems,
+} from "@/components/ui/accordion/_accordion"
 import SampleButtons from "./sampleButtons"
+import FormFieldsSample from "./formFieldsSample"
+import Spinner from "@/components/ui/spinner"
 
 const SampleBlock = () => {
   return (
@@ -112,7 +117,27 @@ const SampleBlock = () => {
         </div>
       </div>
 
+      <div className='my-4 rounded-md border p-4 shadow'>
+        <p className='flex w-32 items-center justify-center rounded-lg p-2 shadow-sm'>
+          Accordion:
+        </p>
+        <Accordion items={sampleAccordionItems} />
+      </div>
+
+      <div className='my-4 rounded-md border p-4 shadow'>
+        <p className='flex w-32 items-center justify-center rounded-lg p-2 shadow-sm'>
+          Spinners:
+        </p>
+        <div className='m-5 flex items-center gap-10'>
+          <Spinner size={20} />
+          <Spinner size={30} className='text-primary-500' />
+          <Spinner size={40} className='text-secondary-500' />
+        </div>
+      </div>
+
       <SampleButtons />
+
+      <FormFieldsSample />
     </main>
   )
 }
