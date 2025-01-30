@@ -11,6 +11,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@next/eslint-plugin-next": "^15.1.6",
     "@reduxjs/toolkit": "^2.5.1",
     "class-variance-authority": "^0.7.1",
     "lint-staged": "^15.4.3",
