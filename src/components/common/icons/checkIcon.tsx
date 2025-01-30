@@ -1,4 +1,4 @@
-import { SVGProps } from "react"
+import { SVGProps } from 'react'
 
 interface IIconProps extends SVGProps<SVGSVGElement> {
   size?: number

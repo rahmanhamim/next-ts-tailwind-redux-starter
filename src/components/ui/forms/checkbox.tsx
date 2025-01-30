@@ -1,6 +1,6 @@
-import CheckIcon from "@/components/common/icons/checkIcon"
-import { cn } from "@/helpers/cn"
-import { forwardRef, InputHTMLAttributes } from "react"
+import CheckIcon from '@/components/common/icons/checkIcon'
+import { cn } from '@/helpers/cn'
+import { forwardRef, InputHTMLAttributes } from 'react'
 
 interface InputFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string
@@ -15,17 +15,17 @@ export const Checkbox = forwardRef<HTMLInputElement, InputFieldProps>(
     { label, name, className, wrapperClass, ...props },
     ref
   ) {
-    const _type = "checkbox"
+    const _type = 'checkbox'
 
     return (
-      <div className={cn("flex items-center", wrapperClass)}>
+      <div className={cn('flex items-center', wrapperClass)}>
         <input
           ref={ref}
           id={props.id ?? name}
           name={name}
           type={_type}
-          value={props.value ?? ""}
-          className={cn("peer h-4 w-4 border-2 opacity-0", className)}
+          value={props.value ?? ''}
+          className={cn('peer h-4 w-4 border-2 opacity-0', className)}
           {...props}
         />
 

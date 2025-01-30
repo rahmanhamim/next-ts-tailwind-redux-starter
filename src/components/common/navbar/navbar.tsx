@@ -1,7 +1,7 @@
-import Link from "next/link"
-import Button from "@/components/ui/button"
-import { navItems } from "./navbar.helper"
-import MobileNavbar from "./mobileNavbar"
+import Link from 'next/link'
+import Button from '@/components/ui/button'
+import { navItems } from './navbar.helper'
+import MobileNavbar from './mobileNavbar'
 
 const Navbar = () => {
   return (
@@ -16,7 +16,7 @@ const Navbar = () => {
               <li key={index}>
                 <Link
                   className='text-content-500 text-sm transition-all hover:text-primary-500'
-                  href={item?.href || "#"}
+                  href={item?.href || '#'}
                 >
                   {item.name}
                 </Link>

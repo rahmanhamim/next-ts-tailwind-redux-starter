@@ -1,12 +1,12 @@
-"use client"
-import EyeCloseIcon from "@/components/common/icons/eyeCloseIcon"
-import EyeOpenIcon from "@/components/common/icons/eyeOpenIcon"
-import WarningIcon from "@/components/common/icons/warningIcon"
-import { cn } from "@/helpers/cn"
-import React, { forwardRef, useState } from "react"
+'use client'
+import EyeCloseIcon from '@/components/common/icons/eyeCloseIcon'
+import EyeOpenIcon from '@/components/common/icons/eyeOpenIcon'
+import WarningIcon from '@/components/common/icons/warningIcon'
+import { cn } from '@/helpers/cn'
+import React, { forwardRef, useState } from 'react'
 type TextFieldParams = Omit<
   React.InputHTMLAttributes<HTMLInputElement>,
-  "className"
+  'className'
 > & {
   label?: string
   error?: string
@@ -34,7 +34,7 @@ const TextInput = forwardRef<HTMLInputElement, TextFieldParams>(
     }
 
     const handleFocus = (e: React.FocusEvent<HTMLInputElement>) => {
-      if (type === "date") {
+      if (type === 'date') {
         e.target.showPicker()
       }
     }
@@ -51,7 +51,7 @@ const TextInput = forwardRef<HTMLInputElement, TextFieldParams>(
         )}
 
         <div className='relative'>
-          {type === "password" && (
+          {type === 'password' && (
             <button
               type='button'
               onClick={togglePasswordVisibility}
@@ -63,13 +63,13 @@ const TextInput = forwardRef<HTMLInputElement, TextFieldParams>(
 
           <input
             ref={ref}
-            type={type === "password" && isPasswordVisible ? "text" : type}
+            type={type === 'password' && isPasswordVisible ? 'text' : type}
             {...inputParams}
             className={cn(
-              "placeholder:text-content-400 w-full rounded border border-neutral-200 bg-transparent px-4 py-3 leading-none transition duration-200 ease-in-out [appearance:textfield] focus:border-primary-200 focus:outline-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none",
+              'placeholder:text-content-400 w-full rounded border border-neutral-200 bg-transparent px-4 py-3 leading-none transition duration-200 ease-in-out [appearance:textfield] focus:border-primary-200 focus:outline-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none',
               {
-                "pr-10": type === "password",
-                "border-[#D6204E]": error,
+                'pr-10': type === 'password',
+                'border-[#D6204E]': error,
               },
               inputClassName
             )}

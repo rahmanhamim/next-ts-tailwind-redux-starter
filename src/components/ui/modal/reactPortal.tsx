@@ -1,10 +1,10 @@
-"use client"
-import { useLayoutEffect, useState } from "react"
-import { createPortal } from "react-dom"
+'use client'
+import { useLayoutEffect, useState } from 'react'
+import { createPortal } from 'react-dom'
 
 function createWrapperAndAppendToBody(wrapperId: string): Element {
-  const wrapperElement = document.createElement("div")
-  wrapperElement.setAttribute("id", wrapperId)
+  const wrapperElement = document.createElement('div')
+  wrapperElement.setAttribute('id', wrapperId)
   document.body.appendChild(wrapperElement)
   return wrapperElement
 }
@@ -14,7 +14,7 @@ type Props = {
   wrapperId?: string
 }
 
-function ReactPortal({ children, wrapperId = "react-portal-wrapper" }: Props) {
+function ReactPortal({ children, wrapperId = 'react-portal-wrapper' }: Props) {
   const [wrapperElement, setWrapperElement] = useState<Element | null>(null)
 
   useLayoutEffect(() => {

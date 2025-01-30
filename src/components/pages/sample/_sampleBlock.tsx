@@ -1,10 +1,10 @@
 import Accordion, {
   sampleAccordionItems,
-} from "@/components/ui/accordion/_accordion"
-import SampleButtons from "./sampleButtons"
-import FormFieldsSample from "./formFieldsSample"
-import Spinner from "@/components/ui/spinner"
-import ExampleModal from "@/components/ui/modal/exampleModal"
+} from '@/components/ui/accordion/_accordion'
+import SampleButtons from './sampleButtons'
+import FormFieldsSample from './formFieldsSample'
+import Spinner from '@/components/ui/spinner'
+import ExampleModal from '@/components/ui/modal/exampleModal'
 
 const SampleBlock = () => {
   return (

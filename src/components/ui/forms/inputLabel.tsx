@@ -1,4 +1,4 @@
-import { cn } from "@/helpers/cn"
+import { cn } from '@/helpers/cn'
 
 interface IInputLabelProps {
   label: string
@@ -17,7 +17,7 @@ const InputLabel = ({
     <label
       htmlFor={htmlFor}
       className={cn(
-        "mb-2 inline-block font-medium text-neutral-800",
+        'mb-2 inline-block font-medium text-neutral-800',
         className
       )}
     >

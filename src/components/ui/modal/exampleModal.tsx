@@ -1,9 +1,9 @@
-"use client"
-import Link from "next/link"
-import React, { useState } from "react"
-import TextInput from "../forms/textInput"
-import { Modal } from "./_modal"
-import Button from "@/components/ui/button"
+'use client'
+import Link from 'next/link'
+import React, { useState } from 'react'
+import TextInput from '../forms/textInput'
+import { Modal } from './_modal'
+import Button from '@/components/ui/button'
 
 const ExampleModal = () => {
   const [open, setOpen] = useState(false)
@@ -30,11 +30,11 @@ const ExampleModal = () => {
           </div>
 
           <p className='text-sm'>
-            By clicking the button below, you agree to our{" "}
+            By clicking the button below, you agree to our{' '}
             <Link href='/privacy-policy' className='text-primary-500 underline'>
               Privacy Policy
-            </Link>{" "}
-            and{" "}
+            </Link>{' '}
+            and{' '}
             <Link
               href='/terms-and-conditions'
               className='text-primary-500 underline'

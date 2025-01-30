@@ -1,26 +1,16 @@
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import js from "@eslint/js";
-import { FlatCompat } from "@eslint/eslintrc";
+import js from "@eslint/js"
+import next from "@next/eslint-plugin-next"
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-    baseDirectory: __dirname,
-    recommendedConfig: js.configs.recommended,
-    allConfig: js.configs.all
-});
-
-export default [...compat.extends("next/core-web-vitals"), {
-    languageOptions: {
-        globals: {},
-    },
-
+export default [
+  js.configs.recommended,
+  next.configs.recommended,
+  {
     rules: {
-        "no-unused-vars": "warn",
-        "no-console": "warn",
-        "no-undef": "warn",
-        quotes: ["error", "single"],
-        "react/display-name": "off",
+      "no-unused-vars": "warn",
+      "no-console": "warn",
+      "no-undef": "warn",
+      quotes: ["error", "single"],
+      "react/display-name": "off",
     },
-}];
+  },
+]

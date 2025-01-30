@@ -1,22 +1,22 @@
-import { Checkbox } from "@/components/ui/forms/checkbox"
-import InputError from "@/components/ui/forms/inputError"
-import InputLabel from "@/components/ui/forms/inputLabel"
-import { Radio } from "@/components/ui/forms/radio"
-import TextInput from "@/components/ui/forms/textInput"
-import React from "react"
+import { Checkbox } from '@/components/ui/forms/checkbox'
+import InputError from '@/components/ui/forms/inputError'
+import InputLabel from '@/components/ui/forms/inputLabel'
+import { Radio } from '@/components/ui/forms/radio'
+import TextInput from '@/components/ui/forms/textInput'
+import React from 'react'
 
 const radioOptions = [
   {
     id: 1,
-    label: "Full-time",
+    label: 'Full-time',
   },
   {
     id: 2,
-    label: "Part-time",
+    label: 'Part-time',
   },
   {
     id: 3,
-    label: "Freelance",
+    label: 'Freelance',
   },
 ]
 

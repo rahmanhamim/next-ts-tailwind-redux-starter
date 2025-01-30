@@ -1,5 +1,5 @@
-import { cn } from "@/helpers/cn"
-import { SVGProps } from "react"
+import { cn } from '@/helpers/cn'
+import { SVGProps } from 'react'
 
 interface IIconProps extends SVGProps<SVGSVGElement> {
   size?: number
@@ -8,7 +8,7 @@ interface IIconProps extends SVGProps<SVGSVGElement> {
 const Spinner = ({ size = 20, className, ...props }: IIconProps) => {
   return (
     <svg
-      className={cn("animate-spin", className)}
+      className={cn('animate-spin', className)}
       width={size}
       height={size}
       viewBox='0 0 20 20'

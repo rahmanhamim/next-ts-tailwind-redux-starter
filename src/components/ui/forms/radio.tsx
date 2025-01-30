@@ -1,5 +1,5 @@
-import { cn } from "@/helpers/cn"
-import { forwardRef, InputHTMLAttributes } from "react"
+import { cn } from '@/helpers/cn'
+import { forwardRef, InputHTMLAttributes } from 'react'
 
 interface RadioFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string
@@ -9,17 +9,17 @@ interface RadioFieldProps extends InputHTMLAttributes<HTMLInputElement> {
 
 export const Radio = forwardRef<HTMLInputElement, RadioFieldProps>(
   function RadioInput({ label, name, className, ...props }, ref) {
-    const _type = "radio"
+    const _type = 'radio'
 
     return (
-      <div className={"flex items-center"}>
+      <div className={'flex items-center'}>
         <input
           ref={ref}
           id={props.id ?? name}
           name={name}
           type={_type}
-          value={props.value ?? ""}
-          className={cn("peer h-4 w-4 border-2 opacity-0", className)}
+          value={props.value ?? ''}
+          className={cn('peer h-4 w-4 border-2 opacity-0', className)}
           {...props}
         />
 
